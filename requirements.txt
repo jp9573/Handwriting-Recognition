@@ -1,0 +1,2 @@
+Flask==1.1.1
+google-cloud-vision==0.41.0
