@@ -1,14 +1,14 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from utils.image_parser import get_text_from_image
 from utils.cloud_storage_manager import upload_data_to_gcs
 from utils.history_model import HistoricalData
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="static/handwriting-recognition/public/")
 
 
 @app.route('/')
 def welcome_page():
-    return "HEY"
+    return render_template('index.html')
 
 
 def send_response(message, success=True):

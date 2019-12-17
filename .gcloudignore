@@ -16,3 +16,23 @@ git c# This file specifies files that are *not* uploaded to Google Cloud Platfor
 # Python pycache:
 __pycache__/
 .DS_Store
+
+- ^(.*/)?.*\.bak$
+- ^(.*/)?.*\.jade$
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*\.jsbp$
+- ^(.*/)?.*\.styl$
+- ^(.*/)?.*\.md$
+- ^(.*/)?.*\.ijmap$
+- ^(.*/)?\..*$
+- ^(.*/)?.*~$
+- ^(.git/.*)
+- ^(.idea/.*)
+- ^(node_modules/.*)
+- ^(.vscode/.*)
+#- ^(static/js/controllers/.*)
+#- ^(static/js/services/.*)
+#- ^(static/js/directives/.*)
+#- ^(static/unitTests/.*)
+- gulpfile.js
+- package.json

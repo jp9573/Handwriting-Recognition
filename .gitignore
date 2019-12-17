@@ -4,4 +4,27 @@ idea/*.*
 bower_components/
 .DS_Store
 .idea/
-*.json
+cloud-storage-services.json
+datastore-services.json
+vision-api-services.json
+
+# dependencies
+static/handwriting-recognition/node_modules
+static/handwriting-recognition/.pnp
+.pnp.js
+
+# testing
+/static/handwriting-recognition/coverage
+
+# production
+/static/handwriting-recognition/build
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
